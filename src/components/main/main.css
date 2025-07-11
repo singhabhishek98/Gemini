@@ -1,0 +1,315 @@
+.main {
+    flex: 1;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 200px;
+    background-color: rgb(251, 251, 251);
+    color: rgb(99, 99, 99);
+    overflow-y: auto;
+  }
+  
+  .main .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    padding: 10px 20px;
+    color: rgb(44, 128, 255);
+  }
+  
+  .gemini-image-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: contain;
+  }
+  
+  .main .nav img:last-child {
+    width: 40px;
+    border-radius: 50%;
+  }
+  
+  img:hover {
+    transform: scale(1.2);
+  }
+  
+  .main-container {
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .main .greet {
+    margin: 50px 0px;
+    font-size: 55px;
+    font-weight: 500;
+    padding: 20px;
+  }
+  
+  .main .greet span {
+    background: linear-gradient(135deg,
+      #EA4335 0%,
+      #FBBC05 25%,
+      #34A853 50%,
+      #4285F4 75%,
+      #9C27B0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .main .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 20px;
+  }
+  
+  .main .card {
+    height: 150px;
+    padding: 15px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+  }
+  
+  .main .card img {
+    width: 35px;
+    padding: 5px;
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+    bottom: 10px;
+    right: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .main .card p {
+    color: gray;
+    font-size: 15px;
+  }
+  
+  .main .card:hover {
+    background-color: rgb(235, 235, 235);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .main .card:hover p {
+    color: rgb(60, 60, 60);
+  }
+  
+  .main .card:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .main-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
+    max-width: 900px;
+    padding: 20px;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 20%, rgba(255,255,255,1) 100%);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: rgb(243, 243, 243);
+    padding: 12px 20px;
+    border-radius: 50px;
+    margin-top: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  .search-box img {
+    width: 25px;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  
+  .search-box img:hover {
+    transform: scale(1.2);
+  }
+  
+  .search-box input {
+    flex: 1;
+    background: transparent;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    padding: 8px 3px 8px;
+    font-size: 18px;
+  }
+  
+  .search-box div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .main .bottom-info {
+    font-size: 14px;
+    margin: 15px auto;
+    text-align: center;
+    font-weight: 400;
+  }
+  
+  .result {
+    padding: 0px 2%;
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .result::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .result-title {
+    margin: 40px 0px;
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    color: black;
+    text-transform: capitalize;
+  }
+  
+  .result img {
+    text-align: right;
+    width: 40px;
+    border-radius: 50%;
+  }
+  
+  .result-data {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+  }
+  
+  .loader {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .loader hr {
+    border-radius: 5px;
+    border: none;
+    border-color: white;
+    background: linear-gradient(to right, rgb(192, 184, 184), rgb(250, 241, 241), rgb(190, 186, 186));
+    height: 10px;
+    animation: loader 3s infinite alternate linear;
+  }
+  
+  @keyframes loader {
+    0% {
+      background-position: -800px 0px;
+    }
+    100% {
+      background-position: 800px 0px;
+    }
+  }
+  
+  .result-data p {
+    font-size: 16px;
+    font-weight: 300;
+    width: 100%;
+    flex-wrap: wrap;
+    color: rgb(92, 89, 95);
+    line-height: 2rem;
+    margin-bottom: 3em;
+  }
+  
+  /* ---------------- Responsive ----------------- */
+  @media (max-width: 400px) {
+    .main-bottom input {
+      flex: none;
+      width: 150px;
+    }
+    .main .greet {
+      font-size: 35px;
+      padding: 10px;
+    }
+    .main .cards {
+      padding: 10px;
+      gap: 15px;
+    }
+    .main .card:nth-child(3),
+    .main .card:nth-child(4) {
+      display: none;
+    }
+    .main .card p {
+      font-size: 14px;
+    }
+    .main .bottom-info {
+      font-size: 10px;
+    }
+    .result-data p {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.5rem;
+    }
+  }
+  
+  @media (min-width: 400px) and (max-width: 600px) {
+    .main-bottom input {
+      width: auto;
+    }
+    .main-bottom img {
+      width: 20px;
+    }
+    .search-box {
+      padding: 5px 10px;
+    }
+    .search-box div {
+      gap: 5px;
+    }
+    .main .greet {
+      font-size: 35px;
+      padding: 10px;
+    }
+    .main .cards {
+      padding: 10px;
+      gap: 15px;
+    }
+    .main .card p {
+      font-size: 14px;
+    }
+    .main .bottom-info {
+      font-size: 10px;
+    }
+  }
+  
+  @media (min-width: 600px) and (max-width: 885px) {
+    .main .greet {
+      font-size: 50px;
+      padding: 10px;
+    }
+    .main .cards {
+      padding: 10px;
+      gap: 15px;
+    }
+    .main .card:nth-child(4) {
+      display: none;
+    }
+  }
+  
