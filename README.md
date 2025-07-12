@@ -5,11 +5,8 @@
 A **React.js** application replicating the **Google Gemini** search interface. It integrates with Google's Gemini language model API to simulate an AI-powered search experience. A sleek UI and functional design offer a realistic user interaction.
 
 ---
-
-<img src="https://github.com/singhabhishek98/Google-Gemini/blob/main/src/assets/gemini_icon.png" width="80"/>
-
 <div align="center">
-  <img src="https://github.com/singhabhishek98/Google-Gemini/blob/main/UI.png" width="100%"/>
+  <img src="https://github.com/singhabhishek98/Gemini/blob/main/UI.png" width="100%"/>
 </div>
 
 ---
