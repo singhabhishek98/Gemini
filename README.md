@@ -1,14 +1,36 @@
-# Google Gemini Clone 
-<img src="https://github.com/singhabhishek98/Google-Gemini/blob/main/src/assets/gemini_icon.png" />
-
-Google Gemini Clone is a React.js web application that replicates the search interface of Google Gemini. This project includes API integration with Google Gemini's language model, allowing users to experience a similar search experience. With this clone, users can explore the functionalities and design of Google Gemini within a React.js environment.
-
 <div align="center">
-  <img src="https://github.com/singhabhishek98/Google-Gemini/blob/main/UI.png"/>
+  <h3>📌 Google Gemini</h3>
 </div>
 
-# How to use
+A **React.js** application replicating the **Google Gemini** search interface. It integrates with Google's Gemini language model API to simulate an AI-powered search experience. A sleek UI and functional design offer a realistic user interaction.
 
-1.  Clone the repo <code>git clone https://github.com/singhabhishek98 </code>
-2.  Install required dependencies <code>npm i</code>
-3. Run the server <code>npm run dev</code>
+---
+
+<img src="https://github.com/singhabhishek98/Google-Gemini/blob/main/src/assets/gemini_icon.png" width="80"/>
+
+<div align="center">
+  <img src="https://github.com/singhabhishek98/Google-Gemini/blob/main/UI.png" width="100%"/>
+</div>
+
+---
+
+## 🚀 Live Demo  
+Check it out here: [https://gemix.netlify.app/](https://gemix.netlify.app/)
+
+## 🛠️ Tech Stack
+- **Frontend:** React.js, HTML, CSS, JavaScript  
+- **API:** Google Gemini Language Model (via integration)
+- **Version Control:** Git & GitHub  
+- **Deployment:** Vite + Netlify
+
+## 📸 Features
+- 🔍 **Gemini-style UI**: Clean and minimalist, replicating Google’s AI look  
+- ⚡ **API Integration**: Communicates with Gemini API (mock/integration-ready)  
+- 🧠 **Interactive Search**: Users can type prompts and get smart responses  
+- 💎 **Responsive Design**: Optimized for mobile and desktop  
+- ⚙️ **Fast Build**: Built using Vite for lightning-fast dev experience  
+
+## 📌 Installation & Usage
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/singhabhishek98/Google-Gemini.git
